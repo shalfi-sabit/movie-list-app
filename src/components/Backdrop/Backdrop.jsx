@@ -42,8 +42,8 @@ const Backdrop = ({ movieId }) => {
       curMovieDesc = curMovieDesc.substring(0, 150) + "...";
     }
   } else {
-    if (curMovieDesc.length >= 180) {
-      curMovieDesc = curMovieDesc.substring(0, 180) + "...";
+    if (curMovieDesc.length >= 200) {
+      curMovieDesc = curMovieDesc.substring(0, 200) + "...";
     }
   }
 

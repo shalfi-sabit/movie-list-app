@@ -24,7 +24,8 @@ export const CallToAction = styled.div`
   color: #fff;
   padding-left: min(6vw, 6em);
   z-index: 2;
-  background: linear-gradient(to top right, rgba(0, 0, 0, 1), transparent 60%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 60%),
+    linear-gradient(to top right, rgba(0, 0, 0, 0.8), transparent 50%);
 
   @media only screen and (min-width: 1000px) {
     justfity-content: center;
@@ -65,7 +66,6 @@ export const Details = styled.button`
   border: none;
   background-color: #000;
   color: #fff;
-  opacity: 0.8;
   min-width: fit-content;
   font-weight: 600;
   font-size: min(24px, 3vw);
