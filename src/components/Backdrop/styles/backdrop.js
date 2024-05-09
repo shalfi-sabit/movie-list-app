@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: relative;
   overflow: hidden;
-  background-color: pink;
 `;
 
 export const BackdropImage = styled.img`
+  width: 100%;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -23,6 +23,10 @@ export const CallToAction = styled.div`
   color: #fff;
   padding-left: min(5vw, 5em);
   z-index: 2;
+
+  @media only screen and (min-width: 1000px) {
+    justfity-content: center;
+  }
 `;
 
 export const MovieTitle = styled.h1`
@@ -76,35 +80,10 @@ export const InnerContainer = styled.div`
 
 export const CircleOverlay = styled.div`
   position: absolute;
-  background-color: #050329;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  box-shadow: 0 0 1500px 800px #050329;
-  bottom: -1000px;
-  left: -60px;
-  opacity: 0.6;
-
-  @media only screen and (min-width: 400px) {
-    left: -500px;
-    bottom: -900px;
-    opacity: 0.6;
-  }
-
-  @media only screen and (min-width: 700px) {
-    left: -400px;
-    bottom: -700px;
-    opacity: 0.6;
-  }
-
-  @media only screen and (min-width: 1000px) {
-    left: -300px;
-    bottom: -600px;
-    opacity: 0.6;
-  }
-
-  @media only screen and (min-width: 1300px) {
-    bottom: -450px;
-    opacity: 0.6;
-  }
+  left: 0;
+  top: 0;
+  background-color: pink;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right, rgba(0, 0, 0, 1), transparent 70%);
 `;
