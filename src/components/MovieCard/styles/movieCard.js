@@ -23,3 +23,13 @@ export const CardWrapper = styled.div`
 export const CardImage = styled.img`
   width: 100%;
 `;
+
+export const Title = styled.h3`
+  color: #fff;
+  margin-bottom: 0.5em;
+`;
+
+export const Description = styled.h5`
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+`;

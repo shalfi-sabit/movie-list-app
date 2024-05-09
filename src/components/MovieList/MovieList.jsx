@@ -8,6 +8,7 @@ const MovieList = () => {
     <ListWrapper>
       {movieList.movies.map((movie) => (
         <MovieCard
+          key={movie._id}
           id={movie._id}
           backdrop={movie.backdrop_path}
           genres={movie.genres}

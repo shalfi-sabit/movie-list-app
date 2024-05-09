@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CardWrapper, CardImage } from "./styles/movieCard";
+import { CardWrapper, CardImage, Title, Description } from "./styles/movieCard";
 
 const MovieCard = ({
   id,
@@ -14,9 +14,10 @@ const MovieCard = ({
   return (
     <CardWrapper>
       <CardImage src={poster} alt="Movie poster" />
-      {/* <Title>
-        {title} ({releaseDate})
-      </Title> */}
+      <Title>{title}</Title>
+      <Description>
+        {releaseDate} &middot; {genres[0]}
+      </Description>
     </CardWrapper>
   );
 };

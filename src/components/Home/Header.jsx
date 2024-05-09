@@ -7,7 +7,6 @@ const getRandomInt = (min, max) => {
 };
 
 const Header = () => {
-  console.log(movieList.movies);
   return (
     <header>
       <Backdrop movieId={movieList.movies[getRandomInt(0, 41)]._id} />
