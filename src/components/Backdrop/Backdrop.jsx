@@ -43,8 +43,26 @@ const Backdrop = ({ movieId }) => {
     }
   } else {
     if (curMovieDesc.length >= 180) {
-      curMovieDesc = curMovieDesc.substring(0, 150) + "...";
+      curMovieDesc = curMovieDesc.substring(0, 180) + "...";
     }
+  }
+
+  let curPlayIconWidth = "18";
+  let curRightArrowIconWidth = "28";
+  if (currentWidth < 450) {
+    curPlayIconWidth = "9";
+    curRightArrowIconWidth = "16";
+  } else if (currentWidth <= 500) {
+    curPlayIconWidth = "12";
+    curRightArrowIconWidth = "18";
+  } else if (currentWidth <= 600) {
+    curPlayIconWidth = "12";
+    curRightArrowIconWidth = "18";
+  } else if (currentWidth <= 700) {
+    curPlayIconWidth = "15";
+  } else if (currentWidth <= 1000) {
+    curPlayIconWidth = "15";
+    curRightArrowIconWidth = "26";
   }
 
   return (
@@ -60,11 +78,15 @@ const Backdrop = ({ movieId }) => {
           <ButtonsContainer>
             <WatchNow>
               Watch Now
-              <img src={PlayIcon} alt="Play Icon" width="15px" />
+              <img src={PlayIcon} alt="Play Icon" width={curPlayIconWidth} />
             </WatchNow>
             <Details>
               Details
-              <img src={RightArrowIcon} alt="Play Icon" width="20px" />
+              <img
+                src={RightArrowIcon}
+                alt="Right arrow Icon"
+                width={curRightArrowIconWidth}
+              />
             </Details>
           </ButtonsContainer>
         </CallToAction>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: relative;
   overflow: hidden;
+  height: 100vh;
 `;
 
 export const BackdropImage = styled.img`
@@ -19,10 +20,11 @@ export const CallToAction = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   color: #fff;
-  padding-left: min(5vw, 5em);
+  padding-left: min(6vw, 6em);
   z-index: 2;
+  background: linear-gradient(to top right, rgba(0, 0, 0, 1), transparent 60%);
 
   @media only screen and (min-width: 1000px) {
     justfity-content: center;
@@ -72,6 +74,13 @@ export const Details = styled.button`
 export const MovieDescription = styled.p`
   font-size: min(24px, 3vw);
   max-width: 70%;
+  margin: 0;
+  margin-top: 0.5em;
+  margin-bottom: 2.5em;
+
+  @media only screen and (min-width: 1000px) {
+    max-width: 50%;
+  }
 `;
 
 export const InnerContainer = styled.div`
@@ -82,8 +91,6 @@ export const CircleOverlay = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  background-color: pink;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top right, rgba(0, 0, 0, 1), transparent 70%);
 `;
