@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`
+  position: relative;
   flex-grow: 1;
   align-self: stretch;
   text-align: center;
   padding-bottom: 1em;
-  transition: 0.2s;
+  transition: 0.5s;
   cursor: pointer;
   width: 40%;
 
-  &:hover {
-    z-index: 4;
-    transform: scale(1.09);
-    box-shadow: 0 0 50px 8px rgba(0, 0, 0, 0.5);
+  &:hover .video-card {
+    transform: scale(1.2);
   }
 
   @media only screen and (min-width: 350px) {

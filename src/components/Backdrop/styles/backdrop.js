@@ -56,9 +56,17 @@ export const WatchNow = styled.button`
   padding: 0.5em 1em;
   border-radius: 100px;
   border: none;
-  background-color: #fff;
+  background-color: red;
+  color: #fff;
   min-width: fit-content;
   font-size: min(20px, 2.5vw);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #cc1400;
+  }
 `;
 
 export const Details = styled.button`
@@ -67,10 +75,16 @@ export const Details = styled.button`
   padding: 0.5em 1em;
   border-radius: 100px;
   border: none;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
   min-width: fit-content;
   font-size: min(20px, 2.5vw);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #cccccc;
+  }
 `;
 
 export const MovieDescription = styled.p`
