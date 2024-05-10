@@ -7,12 +7,9 @@ export const CardWrapper = styled.div`
   text-align: center;
   padding-bottom: 1em;
   transition: 0.5s;
+
   cursor: pointer;
   width: 40%;
-
-  &:hover .video-card {
-    transform: scale(1.2);
-  }
 
   @media only screen and (min-width: 350px) {
     width: 46%;

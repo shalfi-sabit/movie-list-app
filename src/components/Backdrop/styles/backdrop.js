@@ -75,7 +75,7 @@ export const Details = styled.button`
   padding: 0.5em 1em;
   border-radius: 100px;
   border: none;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
   min-width: fit-content;
   font-size: min(20px, 2.5vw);
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
