@@ -16,7 +16,7 @@ const MovieCard = ({
       <CardImage src={poster} alt="Movie poster" />
       <Title>{title}</Title>
       <Description>
-        {releaseDate} &middot; {genres[0]}
+        {releaseDate.substring(0, 4)} &middot; {genres[0]}
       </Description>
     </CardWrapper>
   );
