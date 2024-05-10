@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import movieList from "../../data/movies.json";
 
-import PlayIcon from "../../assets/icons/play-button.png";
-import RightArrowIcon from "../../assets/icons/right.png";
+import PlayIcon from "../../assets/icons/play.svg";
+import RightArrowIcon from "../../assets/icons/arrow-right.svg";
+import "remixicon/fonts/remixicon.css";
 
 import {
   Container,
@@ -13,6 +14,8 @@ import {
   WatchNow,
   Details,
   MovieDescription,
+  PlayIconStyle,
+  RightArrowIconStyle,
 } from "./styles/backdrop";
 
 const Backdrop = ({ movieId }) => {
@@ -75,15 +78,14 @@ const Backdrop = ({ movieId }) => {
         <ButtonsContainer>
           <WatchNow>
             Watch Now
-            <img src={PlayIcon} alt="Play Icon" width={curPlayIconWidth} />
+            <i class="ri-play-fill ri-lg" style={{ marginLeft: ".3em" }}></i>
           </WatchNow>
           <Details>
-            Details
-            <img
-              src={RightArrowIcon}
-              alt="Right arrow Icon"
-              width={curRightArrowIconWidth}
-            />
+            Details{" "}
+            <i
+              class="ri-arrow-right-s-line ri-lg"
+              style={{ marginLeft: ".3em" }}
+            ></i>
           </Details>
         </ButtonsContainer>
       </CallToAction>

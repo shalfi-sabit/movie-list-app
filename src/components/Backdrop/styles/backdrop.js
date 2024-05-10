@@ -53,13 +53,11 @@ export const ButtonsContainer = styled.div`
 export const WatchNow = styled.button`
   display: flex;
   align-items: center;
-  gap: 0.5em;
   padding: 0.5em 1em;
   border-radius: 100px;
   border: none;
   background-color: #fff;
   min-width: fit-content;
-  font-weight: 600;
   font-size: min(24px, 3vw);
 `;
 
@@ -72,7 +70,6 @@ export const Details = styled.button`
   background-color: #000;
   color: #fff;
   min-width: fit-content;
-  font-weight: 600;
   font-size: min(24px, 3vw);
 `;
 
@@ -87,3 +84,7 @@ export const MovieDescription = styled.p`
     max-width: 50%;
   }
 `;
+
+// export const PlayIconStyle = styled.svg``;
+
+// export const RightArrowIconStyle = styled.svg``;
