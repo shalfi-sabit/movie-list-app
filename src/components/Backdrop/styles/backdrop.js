@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
-  overflow: hidden;
-  height: 100vh;
+  background-color: #000;
+
+  @media only screen and (min-width: 1500px) {
+    height: 100vh;
+  }
 `;
 
 export const BackdropImage = styled.img`
@@ -11,6 +14,8 @@ export const BackdropImage = styled.img`
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
 `;
 
 export const CallToAction = styled.div`
@@ -81,16 +86,4 @@ export const MovieDescription = styled.p`
   @media only screen and (min-width: 1000px) {
     max-width: 50%;
   }
-`;
-
-export const InnerContainer = styled.div`
-  position: relative;
-`;
-
-export const CircleOverlay = styled.div`
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
 `;

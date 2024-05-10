@@ -13,8 +13,6 @@ import {
   WatchNow,
   Details,
   MovieDescription,
-  InnerContainer,
-  CircleOverlay,
 } from "./styles/backdrop";
 
 const Backdrop = ({ movieId }) => {
@@ -67,31 +65,28 @@ const Backdrop = ({ movieId }) => {
 
   return (
     <Container>
-      <InnerContainer>
-        <BackdropImage
-          src={movieList.movies[curMovieIndex].backdrop_path}
-          alt="Movie Backdrop"
-        />
-        <CallToAction>
-          <MovieTitle>{movieList.movies[curMovieIndex].title}</MovieTitle>
-          <MovieDescription>{curMovieDesc}</MovieDescription>
-          <ButtonsContainer>
-            <WatchNow>
-              Watch Now
-              <img src={PlayIcon} alt="Play Icon" width={curPlayIconWidth} />
-            </WatchNow>
-            <Details>
-              Details
-              <img
-                src={RightArrowIcon}
-                alt="Right arrow Icon"
-                width={curRightArrowIconWidth}
-              />
-            </Details>
-          </ButtonsContainer>
-        </CallToAction>
-      </InnerContainer>
-      <CircleOverlay></CircleOverlay>
+      <BackdropImage
+        src={movieList.movies[curMovieIndex].backdrop_path}
+        alt="Movie Backdrop"
+      />
+      <CallToAction>
+        <MovieTitle>{movieList.movies[curMovieIndex].title}</MovieTitle>
+        <MovieDescription>{curMovieDesc}</MovieDescription>
+        <ButtonsContainer>
+          <WatchNow>
+            Watch Now
+            <img src={PlayIcon} alt="Play Icon" width={curPlayIconWidth} />
+          </WatchNow>
+          <Details>
+            Details
+            <img
+              src={RightArrowIcon}
+              alt="Right arrow Icon"
+              width={curRightArrowIconWidth}
+            />
+          </Details>
+        </ButtonsContainer>
+      </CallToAction>
     </Container>
   );
 };

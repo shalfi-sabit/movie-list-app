@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <Backdrop movieId={movieList.movies[getRandomInt(0, 41)]._id} />
-      {/* <MovieList /> */}
+      <MovieList />
     </div>
   );
 };

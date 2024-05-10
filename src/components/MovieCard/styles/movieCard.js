@@ -4,26 +4,26 @@ export const CardWrapper = styled.div`
   flex-grow: 1;
   align-self: stretch;
   width: 100%;
-  margin-bottom: 2em;
   text-align: center;
-  padding-bottom: 1.3em;
-  background-color: rgba(255, 255, 255, 0.09);
+  padding-bottom: 1em;
   transition: 0.2s;
   cursor: pointer;
+  width: 40%;
 
   &:hover {
-    transform: scale(1.06);
+    z-index: 4;
+    transform: scale(1.09);
     box-shadow: 0 0 50px 8px rgba(0, 0, 0, 0.5);
-
-    background-color: rgba(255, 255, 255, 0.25);
   }
 
   @media only screen and (min-width: 350px) {
     width: 46%;
+    margin-bottom: 0.3em;
   }
 
   @media only screen and (min-width: 500px) {
     width: 30%;
+    margin-bottom: 0.5em;
   }
 
   @media only screen and (min-width: 800px) {

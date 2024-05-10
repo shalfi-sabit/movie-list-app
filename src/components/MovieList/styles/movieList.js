@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const OuterWrapper = styled.div`
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+`;
+
 export const ListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -9,11 +17,4 @@ export const ListWrapper = styled.div`
   gap: 1em;
   padding: 1em;
   padding-top: 2em;
-`;
-
-export const OuterWrapper = styled.div`
-  background-color: #000;
-  color: #fff;
-  margin: 0;
-  padding: 0;
 `;
