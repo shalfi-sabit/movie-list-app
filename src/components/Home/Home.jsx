@@ -1,12 +1,17 @@
 import React from "react";
-import Header from "./Header";
 import MovieList from "../MovieList/MovieList";
+import Backdrop from "../Backdrop/Backdrop";
+import movieList from "../../data/movies.json";
+
+const getRandomInt = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
 const Home = () => {
   return (
     <div>
-      <Header />
-      <MovieList />
+      <Backdrop movieId={movieList.movies[getRandomInt(0, 41)]._id} />
+      {/* <MovieList /> */}
     </div>
   );
 };

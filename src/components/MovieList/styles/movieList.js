@@ -10,3 +10,10 @@ export const ListWrapper = styled.div`
   padding: 1em;
   padding-top: 2em;
 `;
+
+export const OuterWrapper = styled.div`
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+`;
