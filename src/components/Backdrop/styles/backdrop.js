@@ -58,7 +58,7 @@ export const WatchNow = styled.button`
   border: none;
   background-color: #fff;
   min-width: fit-content;
-  font-size: min(24px, 3vw);
+  font-size: min(20px, 2.5vw);
 `;
 
 export const Details = styled.button`
@@ -70,11 +70,11 @@ export const Details = styled.button`
   background-color: #000;
   color: #fff;
   min-width: fit-content;
-  font-size: min(24px, 3vw);
+  font-size: min(20px, 2.5vw);
 `;
 
 export const MovieDescription = styled.p`
-  font-size: min(24px, 3vw);
+  font-size: min(20px, 2.5vw);
   max-width: 70%;
   margin: 0;
   margin-top: 0.5em;
@@ -84,7 +84,3 @@ export const MovieDescription = styled.p`
     max-width: 50%;
   }
 `;
-
-// export const PlayIconStyle = styled.svg``;
-
-// export const RightArrowIconStyle = styled.svg``;

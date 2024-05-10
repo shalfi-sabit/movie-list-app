@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import movieList from "../../data/movies.json";
 
-import PlayIcon from "../../assets/icons/play.svg";
-import RightArrowIcon from "../../assets/icons/arrow-right.svg";
 import "remixicon/fonts/remixicon.css";
 
 import {
@@ -14,8 +12,6 @@ import {
   WatchNow,
   Details,
   MovieDescription,
-  PlayIconStyle,
-  RightArrowIconStyle,
 } from "./styles/backdrop";
 
 const Backdrop = ({ movieId }) => {
@@ -46,24 +42,6 @@ const Backdrop = ({ movieId }) => {
     if (curMovieDesc.length >= 200) {
       curMovieDesc = curMovieDesc.substring(0, 200) + "...";
     }
-  }
-
-  let curPlayIconWidth = "18";
-  let curRightArrowIconWidth = "28";
-  if (currentWidth < 450) {
-    curPlayIconWidth = "9";
-    curRightArrowIconWidth = "16";
-  } else if (currentWidth <= 500) {
-    curPlayIconWidth = "12";
-    curRightArrowIconWidth = "18";
-  } else if (currentWidth <= 600) {
-    curPlayIconWidth = "12";
-    curRightArrowIconWidth = "18";
-  } else if (currentWidth <= 700) {
-    curPlayIconWidth = "15";
-  } else if (currentWidth <= 1000) {
-    curPlayIconWidth = "15";
-    curRightArrowIconWidth = "26";
   }
 
   return (

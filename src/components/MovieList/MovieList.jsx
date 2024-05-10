@@ -7,6 +7,7 @@ import SectionHeading from "../UI/SectionHeading";
 const MovieList = () => {
   return (
     <OuterWrapper>
+      <SectionHeading title={"ALL MOVIES"} />
       <ListWrapper>
         {movieList.movies.map((movie) => (
           <MovieCard
