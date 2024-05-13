@@ -46,7 +46,7 @@ export const MovieTitle = styled.h1`
 
 export const ButtonsContainer = styled.div`
   display: flex;
-  gap: max(0.5em, 30px);
+  gap: min(2vw, 30px);
   margin-bottom: min(5vw, 5em);
 `;
 
@@ -97,4 +97,33 @@ export const MovieDescription = styled.p`
   @media only screen and (min-width: 1000px) {
     max-width: 50%;
   }
+`;
+
+export const ShortDetails = styled.p`
+  display: flex;
+  font-size: min(20px, 3vw);
+  & > span {
+    color: rgba(180, 180, 180, 1);
+    font-size: min(20px, 3vw);
+    padding: 0.1em 0.5em;
+  }
+
+  & > span:first-child {
+    padding-left: 0;
+  }
+`;
+
+export const AgeLimit = styled.span`
+  border: 2px solid rgba(180, 180, 180, 1);
+  color: rgba(180, 180, 180, 1);
+  font-size: min(20px, 3vw);
+  padding: 0.1em 0.5em;
+`;
+
+export const VerticalDivider = styled.div`
+  background-color: rgba(180, 180, 180, 1);
+  height: min(20px, 3vw);
+  width: min(2px, 0.5vw);
+  display: inline-block;
+  align-self: center;
 `;

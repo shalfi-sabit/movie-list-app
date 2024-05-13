@@ -12,6 +12,9 @@ import {
   WatchNow,
   Details,
   MovieDescription,
+  ShortDetails,
+  AgeLimit,
+  VerticalDivider,
 } from "./styles/backdrop";
 
 const Backdrop = ({ movieId }) => {
@@ -52,16 +55,35 @@ const Backdrop = ({ movieId }) => {
       />
       <CallToAction>
         <MovieTitle>{movieList.movies[curMovieIndex].title}</MovieTitle>
+        <ShortDetails>
+          <span>
+            {movieList.movies[curMovieIndex].release_date.substring(0, 4)}
+          </span>{" "}
+          <VerticalDivider></VerticalDivider>
+          <span>
+            <AgeLimit>{movieList.movies[curMovieIndex].ageLimit}+</AgeLimit>
+          </span>
+          <VerticalDivider></VerticalDivider>
+          <span>
+            {parseInt(movieList.movies[curMovieIndex].duration / 60)}h{" "}
+            {movieList.movies[curMovieIndex].duration % 60}m
+          </span>
+          <VerticalDivider></VerticalDivider>
+          <span>{movieList.movies[curMovieIndex].genres[0]}</span>
+        </ShortDetails>
         <MovieDescription>{curMovieDesc}</MovieDescription>
         <ButtonsContainer>
           <WatchNow>
             Watch Now
-            <i class="ri-play-fill ri-lg" style={{ marginLeft: ".3em" }}></i>
+            <i
+              className="ri-play-fill ri-lg"
+              style={{ marginLeft: ".3em" }}
+            ></i>
           </WatchNow>
           <Details>
             Details{" "}
             <i
-              class="ri-arrow-right-s-line ri-lg"
+              className="ri-arrow-right-s-line ri-lg"
               style={{ marginLeft: ".3em" }}
             ></i>
           </Details>

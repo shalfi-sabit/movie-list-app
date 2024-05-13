@@ -7,8 +7,8 @@ export const Wrapper = styled.div`
   top: 5%;
   left: 0;
   padding-bottom: 1em;
-  animation: scale-up 0.35s ease-out forwards;
-  animation-delay: 0.3s;
+  animation: scale-up 0.4s ease-out forwards;
+  animation-delay: 0.8s;
   z-index: 5;
   box-shadow: 0 5px 80px 8px rgba(0, 0, 0, 0.8);
   transform: scale(0);

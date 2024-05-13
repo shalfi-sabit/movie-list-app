@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import CurVideo from "../../assets/videos/Guardians of the Galaxy Vol. 2 - Trailer 3 (Official).mp4";
 import {
   Wrapper,
@@ -20,13 +20,6 @@ const getRandomInt = (min, max) => {
 };
 
 const VideoCard = ({ id, genres }) => {
-  const handleMouseOut = (event) => {
-    event.target.style.animationName = "scale-down";
-    event.target.style.animationDuration = ".5s";
-    event.target.style.animationTimingFunction = "ease-out";
-    event.target.style.animationFillMode = "forwards";
-  };
-
   return (
     <Wrapper>
       <Video height="240" autoPlay muted>

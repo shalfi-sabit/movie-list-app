@@ -9,7 +9,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
       "release_date": "2023-04-18",
       "title": "Ghosted",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 345
     },
     {
       "_id": 1102776,
@@ -20,7 +22,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/3BSxAjiporlwQTWzaHZ9Yrl5C9D.jpg",
       "release_date": "2023-04-28",
       "title": "AKA",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 642
     },
     {
       "_id": 934433,
@@ -31,7 +35,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/wDWwtvkRRlgTiUr6TyLSMX8FCuZ.jpg",
       "release_date": "2023-03-08",
       "title": "Scream VI",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 532
     },
     {
       "_id": 948713,
@@ -48,7 +54,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/7yyFEsuaLGTPul5UkHc5BhXnQ0k.jpg",
       "release_date": "2023-04-14",
       "title": "The Last Kingdom: Seven Kings Must Die",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 263
     },
     {
       "_id": 420808,
@@ -64,7 +72,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/9NXAlFEE7WDssbXSMgdacsUD58Y.jpg",
       "release_date": "2023-04-20",
       "title": "Peter Pan & Wendy",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 523
     },
     {
       "_id": 493529,
@@ -75,7 +85,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/v7UF7ypAqjsFZFdjksjQ7IUpXdn.jpg",
       "release_date": "2023-03-23",
       "title": "Dungeons & Dragons: Honor Among Thieves",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 523
     },
     {
       "_id": 315162,
@@ -92,7 +104,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
       "release_date": "2022-12-07",
       "title": "Puss in Boots: The Last Wish",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 525
     },
     {
       "_id": 638974,
@@ -103,7 +117,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/s1VzVhXlqsevi8zeCMG9A16nEUf.jpg",
       "release_date": "2023-03-28",
       "title": "Murder Mystery 2",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 434
     },
     {
       "_id": 860425,
@@ -114,7 +130,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/oxNoVgbu2v9ETL93Kri1pw8osYf.jpg",
       "release_date": "2021-08-11",
       "title": "Breathless",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 253
     },
     {
       "_id": 804150,
@@ -125,7 +143,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/gOnmaxHo0412UVr1QM5Nekv1xPi.jpg",
       "release_date": "2023-02-22",
       "title": "Cocaine Bear",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 245
     },
     {
       "_id": 920143,
@@ -136,7 +156,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/5vSFW0rxMDZg8j5cr0JICBDSrGM.jpg",
       "release_date": "2021-12-25",
       "title": "The Trip 6",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 256
     },
     {
       "_id": 505642,
@@ -151,7 +173,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
       "release_date": "2022-11-09",
       "title": "Black Panther: Wakanda Forever",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 223
     },
     {
       "_id": 1114905,
@@ -162,7 +186,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/yMeKoe3ui4Pad8FUOJwCby3SOWe.jpg",
       "release_date": "2023-05-05",
       "title": "Death's Roulette",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 264
     },
     {
       "_id": 436270,
@@ -178,7 +204,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg",
       "release_date": "2022-10-19",
       "title": "Black Adam",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 523
     },
     {
       "_id": 283995,
@@ -193,7 +221,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
       "release_date": "2017-04-19",
       "title": "Guardians of the Galaxy Vol. 2",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 432
     },
     {
       "_id": 736790,
@@ -204,7 +234,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/ra3xm8KFAkwK0CdbPRkfYADJYTB.jpg",
       "release_date": "2023-04-07",
       "title": "Chupa",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 322
     },
     {
       "_id": 849869,
@@ -215,7 +247,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/taYgn3RRpCGlTGdaGQvnSIOzXFy.jpg",
       "release_date": "2023-02-17",
       "title": "Kill Boksoon",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 532
     },
     {
       "_id": 998771,
@@ -226,7 +260,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/bFRxPAiyA7dhTLrEcitAjLL02BJ.jpg",
       "release_date": "2022-07-13",
       "title": "Si Saben Como me pongo Pa Que Me Invitan? 2",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 253
     },
     {
       "_id": 736526,
@@ -242,7 +278,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/9z4jRr43JdtU66P0iy8h18OyLql.jpg",
       "release_date": "2022-12-01",
       "title": "Troll",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 325
     },
     {
       "_id": 631842,
@@ -253,7 +291,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg",
       "release_date": "2023-02-01",
       "title": "Knock at the Cabin",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 235
     },
     {
       "_id": 1023803,
@@ -264,7 +304,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/iqOGxcKViTtU7pwC24xUb1bDslw.jpg",
       "release_date": "2022-11-25",
       "title": "The Hip Hop Nutcracker",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 324
     },
     {
       "_id": 928769,
@@ -275,7 +317,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/sBiJOvHCSWORnFpc4yItflIkdTi.jpg",
       "release_date": "2022-02-15",
       "title": "AI Love You",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 342
     },
     {
       "_id": 869626,
@@ -292,7 +336,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/jaYmP4Ct8YLnxWAW2oYkUjeXtzm.jpg",
       "release_date": "2022-06-24",
       "title": "Marcel the Shell with Shoes On",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 653
     },
     {
       "_id": 265712,
@@ -303,7 +349,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/wc7XQbfx6EIQqCuvmBMt3aisb2Y.jpg",
       "release_date": "2014-08-08",
       "title": "Stand by Me Doraemon",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 452
     },
     {
       "_id": 985939,
@@ -314,7 +362,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/v28T5F1IygM8vXWZIycfNEm3xcL.jpg",
       "release_date": "2022-08-11",
       "title": "Fall",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 242
     },
     {
       "_id": 616037,
@@ -325,7 +375,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
       "release_date": "2022-07-06",
       "title": "Thor: Love and Thunder",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 562
     },
     {
       "_id": 868985,
@@ -336,7 +388,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/ieyUpr5ES9QEz1cn4clCnBf9XJl.jpg",
       "release_date": "2023-03-23",
       "title": "¡Que Viva México!",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 673
     },
     {
       "_id": 634649,
@@ -351,7 +405,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg",
       "release_date": "2021-12-15",
       "title": "Spider-Man: No Way Home",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 634
     },
     {
       "_id": 899294,
@@ -362,7 +418,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/5NpXoAi3nEQkEgLO09nmotPfyNa.jpg",
       "release_date": "2022-06-03",
       "title": "Frank and Penelope",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 532
     },
     {
       "_id": 361743,
@@ -373,7 +431,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
       "release_date": "2022-05-24",
       "title": "Top Gun: Maverick",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 324
     },
     {
       "_id": 118340,
@@ -388,7 +448,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
       "release_date": "2014-07-30",
       "title": "Guardians of the Galaxy",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 523
     },
     {
       "_id": 774752,
@@ -399,7 +461,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg",
       "release_date": "2022-11-25",
       "title": "The Guardians of the Galaxy Holiday Special",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 532
     },
     {
       "_id": 873256,
@@ -410,7 +474,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/kqltY4yywn4ex1Cht6f4lercrW4.jpg",
       "release_date": "2023-04-26",
       "title": "Kiss, Kiss!",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 234
     },
     {
       "_id": 1013860,
@@ -421,7 +487,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/g4yJTzMtOBUTAR2Qnmj8TYIcFVq.jpg",
       "release_date": "2022-11-15",
       "title": "R.I.P.D. 2: Rise of the Damned",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 259
     },
     {
       "_id": 453395,
@@ -436,7 +504,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
       "release_date": "2022-05-04",
       "title": "Doctor Strange in the Multiverse of Madness",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 532
     },
     {
       "_id": 829560,
@@ -447,7 +517,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/6FsGeIp7heHm5eh4tIxTzHIRxmt.jpg",
       "release_date": "2022-08-19",
       "title": "The Next 365 Days",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 452
     },
     {
       "_id": 635302,
@@ -464,7 +536,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg",
       "release_date": "2020-10-16",
       "title": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 556
     },
     {
       "_id": 675353,
@@ -480,7 +554,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
       "release_date": "2022-04-08",
       "title": "Sonic the Hedgehog 2",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 456
     },
     {
       "_id": 768744,
@@ -496,7 +572,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/AsTlA7dj2ySGY1pzGSD0MoHFhEF.jpg",
       "release_date": "2021-08-06",
       "title": "My Hero Academia: World Heroes' Mission",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 864
     },
     {
       "_id": 299536,
@@ -511,7 +589,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
       "release_date": "2018-04-25",
       "title": "Avengers: Infinity War",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 16,
+      "duration": 276
     },
     {
       "_id": 619930,
@@ -522,7 +602,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/gU4mmINWUF294Wzi8mqRvi6peMe.jpg",
       "release_date": "2022-12-25",
       "title": "Narvik",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 645
     },
     {
       "_id": 843794,
@@ -533,7 +615,9 @@
       "poster_path": "https://image.tmdb.org/t/p/original/z2nfRxZCGFgAnVhb9pZO87TyTX5.jpg",
       "release_date": "2023-01-20",
       "title": "JUNG_E",
-      "contentType": "movie"
+      "contentType": "movie",
+      "ageLimit": 18,
+      "duration": 234
     }
   ],
   "page": 1
