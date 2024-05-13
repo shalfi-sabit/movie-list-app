@@ -4,7 +4,13 @@ import MovieCard from "../MovieCard/MovieCard";
 import { ListWrapper, OuterWrapper } from "./styles/movieList";
 import SectionHeading from "../UI/SectionHeading";
 
-const MovieList = ({ seeDetailsHandler }) => {
+const MovieList = ({
+  seeDetailsHandler,
+  setBookmarkedMovies,
+  bookmarkedMovies,
+  alreadyWatchedMovies,
+  setAlreadyWatchedMovies,
+}) => {
   const topTenMovies = movieList.movies.filter((movie, idx) => idx < 12);
 
   return (

@@ -23,7 +23,13 @@ const Home = () => {
         movieId={movieList.movies[getRandomInt(0, 41)]._id}
         seeDetailsHandler={seeDetailsHandler}
       />
-      <MovieList seeDetailsHandler={seeDetailsHandler} />
+      <MovieList
+        seeDetailsHandler={seeDetailsHandler}
+        setBookmarkedMovies={setBookmarkedMovies}
+        bookmarkedMovies={bookmarkedMovies}
+        alreadyWatchedMovies={alreadyWatchedMovies}
+        setAlreadyWatchedMovies={setAlreadyWatchedMovies}
+      />
     </div>
   );
 };
