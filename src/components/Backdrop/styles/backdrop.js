@@ -126,4 +126,6 @@ export const VerticalDivider = styled.div`
   width: min(2px, 0.5vw);
   display: inline-block;
   align-self: center;
+  margin: 0 0.4em;
+  font-size: inherit;
 `;

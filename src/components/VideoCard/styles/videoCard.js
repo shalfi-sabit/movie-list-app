@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
   z-index: 5;
   box-shadow: 0 5px 80px 8px rgba(0, 0, 0, 0.8);
   transform: scale(0);
+  border-radius: 10px;
 
   @keyframes scale-up {
     0% {
@@ -49,6 +50,8 @@ export const Wrapper = styled.div`
 export const Video = styled.video`
   width: 100%;
   height: 50%;
+
+  border-radius: 10px;
 `;
 
 export const Footer = styled.footer`
@@ -99,13 +102,12 @@ export const GenreContainer = styled.h5`
   padding: 0.2em 0.5em;
   font-size: min(10px, 2vw);
   height: fit-content;
-  margin-bottom: 0;
+  margin: 0;
 `;
 
 export const GenreRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 1em;
   margin-top: 0.5em;
 `;

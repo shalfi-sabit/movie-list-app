@@ -19,6 +19,7 @@ const MovieList = () => {
             poster={movie.poster_path}
             releaseDate={movie.release_date}
             title={movie.title}
+            duration={movie.duration}
           />
         ))}
       </ListWrapper>

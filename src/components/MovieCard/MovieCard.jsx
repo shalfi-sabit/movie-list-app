@@ -10,6 +10,7 @@ const MovieCard = ({
   poster,
   releaseDate,
   title,
+  duration,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -24,7 +25,12 @@ const MovieCard = ({
         {releaseDate.substring(0, 4)} &middot; {genres[0]}
       </Description>
       {isHovered && (
-        <VideoCard id={id} className="video-card" genres={genres} />
+        <VideoCard
+          id={id}
+          className="video-card"
+          genres={genres}
+          duration={duration}
+        />
       )}
     </CardWrapper>
   );

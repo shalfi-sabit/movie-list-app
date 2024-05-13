@@ -1,5 +1,4 @@
 import React from "react";
-import CurVideo from "../../assets/videos/Guardians of the Galaxy Vol. 2 - Trailer 3 (Official).mp4";
 import {
   Wrapper,
   Video,
@@ -15,15 +14,79 @@ import {
 } from "./styles/videoCard";
 import "remixicon/fonts/remixicon.css";
 
+import movieList from "../../data/movies.json";
+
+import GhostedTrailer from "../../assets/videos/Ghosted.mp4";
+import AKATrailer from "../../assets/videos/AKA.mp4";
+import ScreamVI from "../../assets/videos/Scream_VI.mp4";
+import SevenKingdomTrailer from "../../assets/videos/Seven Kings Must Die.mp4";
+import PeterPan from "../../assets/videos/Peter_Pan_and_Wendy.mp4";
+import DungeonsTrailer from "../../assets/videos/Dungeons & Dragons_ Honor Among Thieves .mp4";
+import PussTrailer from "../../assets/videos/Puss In Boots.mp4";
+import MurderTrailer from "../../assets/videos/Murder Mystery 2.mp4";
+import BreathlessTrailer from "../../assets/videos/Breathless.mp4";
+import CocaineBearTrailer from "../../assets/videos/Cocaine_Bear.mp4";
+import TripTrailer from "../../assets/videos/The_Trip_6.mp4";
+import BlackPantherTrailer from "../../assets/videos/Black_Panther.mp4";
+import GurdiansTrailer from "../../assets/videos/Guardians of the Galaxy Vol. 2 - Trailer 3 (Official).mp4";
+import ThorTrailer from "../../assets/videos/Thor_ Love and Thunder .mp4";
+import SonicTrailer from "../../assets/videos/Sonic the Hedgehog 2 .mp4";
+
+const TRAILERS = [
+  GhostedTrailer,
+  AKATrailer,
+  ScreamVI,
+  SevenKingdomTrailer,
+  PeterPan,
+  DungeonsTrailer,
+  PussTrailer,
+  MurderTrailer,
+  BreathlessTrailer,
+  CocaineBearTrailer,
+  TripTrailer,
+  BlackPantherTrailer,
+  GurdiansTrailer,
+  ThorTrailer,
+  SonicTrailer,
+  GhostedTrailer,
+  AKATrailer,
+  ScreamVI,
+  SevenKingdomTrailer,
+  PeterPan,
+  DungeonsTrailer,
+  PussTrailer,
+  MurderTrailer,
+  BreathlessTrailer,
+  CocaineBearTrailer,
+  TripTrailer,
+  BlackPantherTrailer,
+  GurdiansTrailer,
+  ThorTrailer,
+  SonicTrailer,
+  GhostedTrailer,
+  AKATrailer,
+  ScreamVI,
+  SevenKingdomTrailer,
+  PeterPan,
+  DungeonsTrailer,
+  PussTrailer,
+  MurderTrailer,
+  BreathlessTrailer,
+  CocaineBearTrailer,
+  TripTrailer,
+  BlackPantherTrailer,
+];
+
 const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-const VideoCard = ({ id, genres }) => {
+const VideoCard = ({ id, genres, duration }) => {
+  const curMovieIndex = movieList.movies.findIndex((movie) => movie._id === id);
   return (
     <Wrapper>
       <Video height="240" autoPlay muted>
-        <source src={CurVideo} type="video/mp4" />
+        <source src={TRAILERS[curMovieIndex]} type="video/mp4" />
       </Video>
 
       <Footer>
@@ -45,7 +108,9 @@ const VideoCard = ({ id, genres }) => {
           <GenreContainer style={{ width: "fit-content" }}>HD</GenreContainer>
         </SeasonContainer>
 
-        <DurationContainer>{getRandomInt(220, 780)} minutes</DurationContainer>
+        <DurationContainer>
+          {parseInt(duration / 60)}h {duration % 60}m
+        </DurationContainer>
 
         <GenreRow>
           {genres.map((genre, idx) => (
