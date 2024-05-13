@@ -81,7 +81,7 @@ const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-const VideoCard = ({ id, genres, duration }) => {
+const VideoCard = ({ id, genres, duration, seeDetailsHandler }) => {
   const curMovieIndex = movieList.movies.findIndex((movie) => movie._id === id);
   return (
     <Wrapper>
@@ -94,7 +94,10 @@ const VideoCard = ({ id, genres, duration }) => {
           <WatchTrailerIcon title="Watch Trailer">
             <i className="ri-play-fill ri-1x" style={{ color: "#000" }}></i>
           </WatchTrailerIcon>
-          <InfoIcon title="See Details">
+          <InfoIcon
+            title="See Details"
+            onClick={() => seeDetailsHandler(curMovieIndex)}
+          >
             <i className="ri-info-i ri-1x"></i>
           </InfoIcon>
           <WatchLaterIcon title="Watch Later">

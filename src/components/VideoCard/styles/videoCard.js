@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background-color: rgba(23, 23, 23, 0.8);
+  background-color: rgba(23, 23, 23, 0.6);
   backdrop-filter: blur(18px);
   position: absolute;
   top: 5%;
@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
   box-shadow: 0 5px 80px 8px rgba(0, 0, 0, 0.8);
   transform: scale(0);
   border-radius: 10px;
+  overflow: hidden;
 
   @keyframes scale-up {
     0% {
@@ -50,8 +51,6 @@ export const Wrapper = styled.div`
 export const Video = styled.video`
   width: 100%;
   height: 50%;
-
-  border-radius: 10px;
 `;
 
 export const Footer = styled.footer`

@@ -39,7 +39,7 @@ export const CallToAction = styled.div`
 
 export const MovieTitle = styled.h1`
   font-family: var(--ff-cover-title);
-  font-size: min(7vw, 84px);
+  font-size: min(6vw, 84px);
   margin: 0;
   max-width: 70%;
 `;
@@ -53,8 +53,8 @@ export const ButtonsContainer = styled.div`
 export const WatchNow = styled.button`
   display: flex;
   align-items: center;
-  padding: 0.5em 1em;
   border-radius: 100px;
+  padding: 0.5em 1.3em;
   border: none;
   background-color: red;
   color: #fff;
@@ -72,8 +72,8 @@ export const WatchNow = styled.button`
 export const Details = styled.button`
   display: flex;
   align-items: center;
-  padding: 0.5em 1em;
   border-radius: 100px;
+  padding: 0.5em 1.3em;
   border: none;
   background-color: rgba(255, 255, 255, 1);
   min-width: fit-content;
@@ -101,10 +101,10 @@ export const MovieDescription = styled.p`
 
 export const ShortDetails = styled.p`
   display: flex;
-  font-size: min(20px, 3vw);
+  font-size: min(20px, 2vw);
   & > span {
     color: rgba(180, 180, 180, 1);
-    font-size: min(20px, 3vw);
+    font-size: min(20px, 2vw);
     padding: 0.1em 0.5em;
   }
 
@@ -116,8 +116,8 @@ export const ShortDetails = styled.p`
 export const AgeLimit = styled.span`
   border: 2px solid rgba(180, 180, 180, 1);
   color: rgba(180, 180, 180, 1);
-  font-size: min(20px, 3vw);
-  padding: 0.1em 0.5em;
+  font-size: min(20px, 2vw);
+  padding: 0.1em 0.8em;
 `;
 
 export const VerticalDivider = styled.div`

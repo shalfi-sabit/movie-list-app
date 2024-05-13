@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const OuterWrapper = styled.div`
-  background-color: #000;
+  background-color: #181818;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ export const ListWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #181818;
   gap: 1em;
   padding: 1em;
   padding-top: 2em;

@@ -17,7 +17,7 @@ import {
   VerticalDivider,
 } from "./styles/backdrop";
 
-const Backdrop = ({ movieId }) => {
+const Backdrop = ({ movieId, seeDetailsHandler }) => {
   const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -80,7 +80,7 @@ const Backdrop = ({ movieId }) => {
               style={{ marginLeft: ".3em" }}
             ></i>
           </WatchNow>
-          <Details>
+          <Details onClick={() => seeDetailsHandler(curMovieIndex)}>
             Details{" "}
             <i
               className="ri-arrow-right-s-line ri-lg"

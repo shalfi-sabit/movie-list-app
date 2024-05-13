@@ -11,13 +11,15 @@ const MovieCard = ({
   releaseDate,
   title,
   duration,
+  idx,
+  seeDetailsHandler,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
-
   return (
     <CardWrapper
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
+      onClick={() => seeDetailsHandler(idx)}
     >
       <CardImage src={poster} alt="Movie poster" />
       <Title>{title}</Title>
@@ -30,6 +32,7 @@ const MovieCard = ({
           className="video-card"
           genres={genres}
           duration={duration}
+          seeDetailsHandler={seeDetailsHandler}
         />
       )}
     </CardWrapper>
