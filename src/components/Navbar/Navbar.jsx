@@ -9,7 +9,7 @@ const Navbar = () => {
         <li>
           <BrandName>CINEMANIA</BrandName>
         </li>
-        <li>
+        <li className="nav-link">
           <NavLink
             to="/"
             style={{ textDecoration: "none", color: "rgba(255, 255, 255, 1)" }}
@@ -17,7 +17,7 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
-        <li>
+        <li className="nav-link">
           <NavLink
             to="/watch-later"
             style={{ textDecoration: "none", color: "rgba(255, 255, 255, 1)" }}
@@ -25,7 +25,7 @@ const Navbar = () => {
             Watch Later
           </NavLink>
         </li>
-        <li>
+        <li className="nav-link">
           <NavLink
             to="/already-watched"
             style={{ textDecoration: "none", color: "rgba(255, 255, 255, 1)" }}
@@ -36,7 +36,7 @@ const Navbar = () => {
       </ul>
 
       <ul>
-        <li>
+        <li className="login-items">
           <NavLink
             to="/register"
             style={{
@@ -44,12 +44,13 @@ const Navbar = () => {
               color: "rgba(255, 255, 255, 1)",
               backgroundColor: "red",
               padding: ".5em 1.5em",
+              fontSize: "min(14px, 4vw)",
             }}
           >
             JOIN NOW
           </NavLink>
         </li>
-        <li>
+        <li className="login-items">
           <NavLink
             to="/sign-in"
             style={{
@@ -57,6 +58,7 @@ const Navbar = () => {
               color: "rgba(255, 255, 255, 1)",
               padding: ".5em 1.5em",
               border: "1px solid #fff",
+              fontSize: "min(14px, 4vw)",
             }}
           >
             SIGN IN

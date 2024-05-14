@@ -12,6 +12,14 @@ export const NavContainer = styled.nav`
   z-index: 6;
   width: 100%;
 
+  & .nav-link {
+    display: none;
+  }
+
+  & .login-items {
+    display: none;
+  }
+
   & ul {
     list-style: none;
     padding: 0;
@@ -30,11 +38,23 @@ export const NavContainer = styled.nav`
   & ul:nth-chil(2) > li:first-child:hover {
     background-color: #b31200;
   }
+
+  @media only screen and (min-width: 550px) {
+    & .login-items {
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    & .nav-link {
+      display: block;
+    }
+  }
 `;
 
 export const BrandName = styled.h1`
   font-family: var(--ff-logo);
-  font-size: 2.4em;
+  font-size: min(2.4em, 4.5vw);
   font-weight: 400;
   color: red;
   margin: 0;
