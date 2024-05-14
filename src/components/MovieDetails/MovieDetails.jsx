@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import movieList from "../../data/movies.json";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 import {
   BackdropContainer,
   BackdropImage,
@@ -30,8 +31,13 @@ import DataStorageContext from "../../contexts/DataStorageContext";
 
 const MovieDetails = () => {
   const params = useParams();
-  const { setWatchLaterList, setAlreadyWatchedList, seeDetailsHandler } =
+  const navigate = useNavigate();
+  const { watchLaterListHandler, alreadyWatchedListHandler } =
     useContext(DataStorageContext);
+
+  const seeDetailsHandler = (idx) => {
+    navigate(`/details/${idx}`);
+  };
 
   let moreLikeThisList = [];
   for (let i = movieList.movies.length - 1; i >= 0; --i) {
@@ -39,12 +45,16 @@ const MovieDetails = () => {
       break;
     }
     if (i !== params.id) {
-      moreLikeThisList.push(movieList.movies[i]);
+      moreLikeThisList.push({
+        ...movieList.movies[i],
+        idx: i,
+      });
     }
   }
 
   return (
     <div>
+      <Navbar />
       <PageContainer>
         <div>
           <BackdropContainer>
@@ -68,7 +78,7 @@ const MovieDetails = () => {
                   </PrimaryTitle>
                 </TitleTextContainer>
                 <i
-                  class="ri-bookmark-fill"
+                  className="ri-bookmark-fill"
                   style={{
                     color: "red",
                     fontSize: "min(32px, 6.5vw)",
@@ -80,6 +90,7 @@ const MovieDetails = () => {
                   onMouseOut={(event) => {
                     event.target.style.color = "red";
                   }}
+                  onClick={() => watchLaterListHandler(params.id)}
                   title="Watch Later"
                 ></i>
               </TitleContainer>
@@ -95,7 +106,11 @@ const MovieDetails = () => {
               <Description>{movieList.movies[params.id].overview}</Description>
               <ButtonsContainer>
                 <WatchTrailerButton>WATCH TRAILER</WatchTrailerButton>
-                <WatchLaterButton>MARK AS WATCHED</WatchLaterButton>
+                <WatchLaterButton
+                  onClick={() => alreadyWatchedListHandler(params.id)}
+                >
+                  MARK AS WATCHED
+                </WatchLaterButton>
               </ButtonsContainer>
             </Texts>
           </DetailsCard>
@@ -115,7 +130,7 @@ const MovieDetails = () => {
               releaseDate={movie.release_date}
               title={movie.title}
               duration={movie.duration}
-              idx={idx}
+              idx={movie.idx}
               seeDetailsHandler={seeDetailsHandler}
             />
           ))}
