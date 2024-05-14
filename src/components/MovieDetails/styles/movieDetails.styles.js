@@ -54,6 +54,7 @@ export const DetailsCard = styled.div`
   width: 80%;
   max-width: 1200px;
   margin-top: 0;
+  z-index: 4;
 
   @media only screen and (max-width: 1000px) {
     width: 90%;
@@ -66,6 +67,12 @@ export const DetailsCard = styled.div`
   @media only screen and (max-width: 525px) {
     flex-direction: column;
     margin-top: 42vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    top: 80%;
   }
 `;
 

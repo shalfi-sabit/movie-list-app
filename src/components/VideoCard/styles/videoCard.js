@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
   transform: scale(0);
   border-radius: 10px;
   overflow: hidden;
+  color: #fff;
 
   @keyframes scale-up {
     0% {
