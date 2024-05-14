@@ -33,6 +33,10 @@ export const BackdropShadow = styled.div`
 export const Poster = styled.img`
   width: 40%;
   object-fit: cover;
+
+  @media only screen and (max-width: 525px) {
+    width: 50%;
+  }
 `;
 
 export const DetailsCard = styled.div`
@@ -42,44 +46,81 @@ export const DetailsCard = styled.div`
   top: 70%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  padding: 2.2em 3em;
+  padding: min(2.2em, 3vw) min(3em, 3vw);
   display: flex;
   align-items: center;
-  gap: min(4em, 8vw);
+  gap: min(3em, 4vw);
   font-size: min(20px, 3vw);
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 0;
+
+  @media only screen and (max-width: 1000px) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 22vw;
+  }
+
+  @media only screen and (max-width: 525px) {
+    flex-direction: column;
+    margin-top: 42vw;
+  }
 `;
 
 export const Texts = styled.div`
   color: #fff;
   width: 60%;
   font-size: min(18px, 3.5vw);
+
+  @media only screen and (max-width: 525px) {
+    width: 90%;
+  }
 `;
 
 export const SecondaryTitle = styled.h4`
-  font-size: min(14px, 3vw);
+  font-size: min(14px, 2vw);
   margin: 0;
   padding: 0;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 1.8vw;
+  }
 `;
 
 export const PrimaryTitle = styled.h1`
   font-size: min(26px, 4vw);
   margin: 0;
   padding: 0;
-  max-width: 85%;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 3.2vw;
+  }
 `;
 
 export const Description = styled.p`
   margin: 0;
   margin-top: 0.5em;
+  font-size: min(16px, 3vw);
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2.3vw;
+  }
 `;
 
 export const DescriptionTitle = styled.p`
   padding: 0;
   margin: 0;
+  font-size: min(16px, 3vw);
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2.3vw;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
-  margin-top: 4em;
+  margin-top: min(3.5em, 4vw);
   display: flex;
   gap: 1em;
 `;
@@ -87,7 +128,7 @@ export const ButtonsContainer = styled.div`
 export const WatchTrailerButton = styled.button`
   border: none;
   padding: 0.8em 2em;
-  font-size: min(12px, 3vw);
+  font-size: min(12px, 2.5vw);
   background-color: red;
   color: #fff;
   transition: 0.4s;
@@ -95,12 +136,20 @@ export const WatchTrailerButton = styled.button`
   &:hover {
     background-color: #b31200;
   }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2vw;
+  }
+
+  @media only screen and (min-width: 525px) and (max-width: 799px) {
+    font-size: 1.5vw;
+  }
 `;
 
 export const WatchLaterButton = styled.button`
   border: none;
   padding: 0.5em 2em;
-  font-size: min(12px, 3vw);
+  font-size: min(12px, 2.5vw);
   background-color: #000;
   border: 1px solid #fff;
   color: #fff;
@@ -109,6 +158,14 @@ export const WatchLaterButton = styled.button`
   &:hover {
     background-color: #fff;
     color: #000;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2vw;
+  }
+
+  @media only screen and (min-width: 525px) and (max-width: 799px) {
+    font-size: 1.5vw;
   }
 `;
 
@@ -119,6 +176,28 @@ export const TitleContainer = styled.div`
 `;
 
 export const Rating = styled.h2`
-  margin-top: 3.5em;
+  margin-top: min(3.5em, 4vw);
   font-size: min(18px, 3.5vw);
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2.6vw;
+  }
+`;
+
+export const TitleTextContainer = styled.div`
+  width: 85%;
+`;
+
+export const CastsName = styled.p`
+  font-size: min(16px, 3vw);
+  @media only screen and (max-width: 800px) {
+    font-size: 2.3vw;
+  }
+`;
+
+export const DirectorName = styled.p`
+  font-size: min(16px, 3vw);
+  @media only screen and (max-width: 800px) {
+    font-size: 2.3vw;
+  }
 `;

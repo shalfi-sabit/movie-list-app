@@ -18,6 +18,9 @@ import {
   WatchLaterButton,
   TitleContainer,
   Rating,
+  TitleTextContainer,
+  DirectorName,
+  CastsName,
 } from "./styles/movieDetails.styles";
 
 const MovieDetails = () => {
@@ -39,10 +42,10 @@ const MovieDetails = () => {
           />
           <Texts>
             <TitleContainer>
-              <div>
+              <TitleTextContainer>
                 <SecondaryTitle>TITLE</SecondaryTitle>
                 <PrimaryTitle>{movieList.movies[params.id].title}</PrimaryTitle>
-              </div>
+              </TitleTextContainer>
               <i
                 class="ri-bookmark-fill"
                 style={{
@@ -62,8 +65,10 @@ const MovieDetails = () => {
 
             <Rating>IMDb Rating: 8.8</Rating>
 
-            <p>DIRECTOR | Jon Watts</p>
-            <p>ACTOR | Tom Holland, Michael Keaton, Robert Downey Jr ...</p>
+            <DirectorName>DIRECTOR | Jon Watts</DirectorName>
+            <CastsName>
+              ACTOR | Tom Holland, Michael Keaton, Robert Downey Jr ...
+            </CastsName>
 
             <DescriptionTitle>Film synopsis</DescriptionTitle>
             <Description>{movieList.movies[params.id].overview}</Description>
