@@ -44,8 +44,6 @@ function App() {
     }
   };
 
-  const snackbarHandler = () => {};
-
   return (
     <div className="App">
       <DataStorageContext.Provider

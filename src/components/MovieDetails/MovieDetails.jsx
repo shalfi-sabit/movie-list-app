@@ -112,6 +112,7 @@ const MovieDetails = () => {
                       setSnackbarMessage(
                         "Movie removed from Watch Later successfully."
                       );
+                      setTimeout(() => setIsSnackbarOpen(false), 5000);
                       setWatchLaterList((prevState) => {
                         let updatedState = prevState.filter(
                           (movie) =>
@@ -124,6 +125,7 @@ const MovieDetails = () => {
                       setSnackbarMessage(
                         "Movie added to Watch Later successfully."
                       );
+                      setTimeout(() => setIsSnackbarOpen(false), 5000);
                       watchLaterListHandler(params.id);
                     }
                     setWatchLaterState((prevState) => {
@@ -158,6 +160,7 @@ const MovieDetails = () => {
                       setSnackbarMessage(
                         "Movie removed from Already Watched list successfully."
                       );
+                      setTimeout(() => setIsSnackbarOpen(false), 5000);
                       setAlreadyWatchedList((prevState) => {
                         let updatedState = prevState.filter(
                           (movie) =>
@@ -170,6 +173,7 @@ const MovieDetails = () => {
                       setSnackbarMessage(
                         "Movie added to Already Watched list successfully."
                       );
+                      setTimeout(() => setIsSnackbarOpen(false), 5000);
                       alreadyWatchedListHandler(params.id);
                     }
                     setAlreadyWatchedState((prevState) => {

@@ -9,7 +9,7 @@ export const SnackbarContainer = styled.div`
   left: 50%;
   transform: translateX(-50%);
   font-size: min(1rem, 2vw);
-  z-index: 7;
-  top: -60px;
-  transition: top 0.5s ease-in-out;
+  z-index: 999;
+  top: 6rem;
+  transition: 0.2s ease-in-out;
 `;
