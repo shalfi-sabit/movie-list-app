@@ -1,6 +1,6 @@
 ## Movie Listing Website
-[](https://github.com/shalfi-sabit/movie-list-app/assets/167965126/86eb94b3-ffa1-4c0c-a722-3a2bab075f6f)
-Live link: [](https://movie-list-app-shalfisabit.netlify.app/) 
+![](https://github.com/shalfi-sabit/movie-list-app/assets/167965126/86eb94b3-ffa1-4c0c-a722-3a2bab075f6f)
+Live link: [https://movie-list-app-shalfisabit.netlify.app/](https://movie-list-app-shalfisabit.netlify.app/) 
 
 ## How to run the project
 - Clone the repository to your local machine
