@@ -162,11 +162,6 @@ export const WatchLaterButton = styled.button`
   color: #fff;
   transition: 0.4s;
 
-  &:hover {
-    background-color: #fff;
-    color: #000;
-  }
-
   @media only screen and (max-width: 800px) {
     font-size: 2vw;
   }

@@ -6,10 +6,17 @@ import WatchLaterPage from "./components/WatchLater/WatchLater";
 import DataStorageContext from "./contexts/DataStorageContext";
 import { useState } from "react";
 import movieList from "./data/movies.json";
+import {
+  watchedStateObject,
+  watchLaterStateObject,
+} from "./data/defaultStateObjects.js";
 
 function App() {
   const [watchLaterList, setWatchLaterList] = useState([]);
   const [alreadyWatchedList, setAlreadyWatchedList] = useState([]);
+  const [watchLaterState, setWatchLaterState] = useState(watchLaterStateObject);
+  const [alreadyWatchedState, setAlreadyWatchedState] =
+    useState(watchedStateObject);
 
   const alreadyWatchedListHandler = (idx) => {
     const foundIndex = alreadyWatchedList.findIndex(
@@ -45,6 +52,10 @@ function App() {
           setAlreadyWatchedList,
           watchLaterListHandler,
           alreadyWatchedListHandler,
+          alreadyWatchedState,
+          setAlreadyWatchedState,
+          watchLaterState,
+          setWatchLaterState,
         }}
       >
         <BrowserRouter>

@@ -32,8 +32,16 @@ import DataStorageContext from "../../contexts/DataStorageContext";
 const MovieDetails = () => {
   const params = useParams();
   const navigate = useNavigate();
-  const { watchLaterListHandler, alreadyWatchedListHandler } =
-    useContext(DataStorageContext);
+  const {
+    watchLaterListHandler,
+    alreadyWatchedListHandler,
+    setAlreadyWatchedList,
+    setWatchLaterList,
+    alreadyWatchedState,
+    setAlreadyWatchedState,
+    watchLaterState,
+    setWatchLaterState,
+  } = useContext(DataStorageContext);
 
   const seeDetailsHandler = (idx) => {
     navigate(`/details/${idx}`);
@@ -80,18 +88,45 @@ const MovieDetails = () => {
                 <i
                   className="ri-bookmark-fill"
                   style={{
-                    color: "red",
+                    color: `${watchLaterState[params.id] ? "red" : "#fff"}`,
                     fontSize: "min(32px, 6.5vw)",
                     transition: ".4s",
                   }}
                   onMouseOver={(event) => {
-                    event.target.style.color = "#b31200";
+                    event.target.style.color = `${
+                      watchLaterState[params.id]
+                        ? "#b31200"
+                        : "rgba(255, 255, 255, .7)"
+                    }`;
                   }}
                   onMouseOut={(event) => {
-                    event.target.style.color = "red";
+                    event.target.style.color = `${
+                      watchLaterState[params.id] ? "red" : "#fff"
+                    }`;
                   }}
-                  onClick={() => watchLaterListHandler(params.id)}
-                  title="Watch Later"
+                  onClick={() => {
+                    if (watchLaterState[params.id]) {
+                      setWatchLaterList((prevState) => {
+                        let updatedState = prevState.filter(
+                          (movie) =>
+                            movie._id !== movieList.movies[params.id]._id
+                        );
+                        return updatedState;
+                      });
+                    } else {
+                      watchLaterListHandler(params.id);
+                    }
+                    setWatchLaterState((prevState) => {
+                      let updatedState = { ...prevState };
+                      updatedState[params.id] = !watchLaterState[params.id];
+                      return updatedState;
+                    });
+                  }}
+                  title={
+                    watchLaterState[params.id]
+                      ? "Undo Watch Later"
+                      : "Watch Later"
+                  }
                 ></i>
               </TitleContainer>
 
@@ -107,9 +142,59 @@ const MovieDetails = () => {
               <ButtonsContainer>
                 <WatchTrailerButton>WATCH TRAILER</WatchTrailerButton>
                 <WatchLaterButton
-                  onClick={() => alreadyWatchedListHandler(params.id)}
+                  onClick={() => {
+                    if (alreadyWatchedState[params.id]) {
+                      setAlreadyWatchedList((prevState) => {
+                        let updatedState = prevState.filter(
+                          (movie) =>
+                            movie._id !== movieList.movies[params.id]._id
+                        );
+                        return updatedState;
+                      });
+                    } else {
+                      alreadyWatchedListHandler(params.id);
+                    }
+                    setAlreadyWatchedState((prevState) => {
+                      let updatedState = { ...prevState };
+                      updatedState[params.id] = !alreadyWatchedState[params.id];
+                      return updatedState;
+                    });
+                  }}
+                  style={{
+                    backgroundColor: `${
+                      alreadyWatchedState[params.id] ? "#fff" : "#000"
+                    }`,
+                    color: `${
+                      !alreadyWatchedState[params.id] ? "#fff" : "#000"
+                    }`,
+                  }}
+                  onMouseOver={(event) => {
+                    event.target.style.backgroundColor = `${
+                      !alreadyWatchedState[params.id]
+                        ? "rgba(255, 255, 255, 1)"
+                        : "#000"
+                    }`;
+                    event.target.style.color = `${
+                      !alreadyWatchedState[params.id]
+                        ? "#000"
+                        : "rgba(255, 255, 255, 1)"
+                    }`;
+                  }}
+                  onMouseOut={(event) => {
+                    event.target.style.backgroundColor = `${
+                      !alreadyWatchedState[params.id]
+                        ? "rgba(0, 0, 0, 1)"
+                        : "#fff"
+                    }`;
+                    event.target.style.color = `${
+                      !alreadyWatchedState[params.id]
+                        ? "#fff"
+                        : "rgba(0, 0, 0, 1)"
+                    }`;
+                  }}
                 >
-                  MARK AS WATCHED
+                  MARK AS{" "}
+                  {alreadyWatchedState[params.id] ? "UNWATCHED" : "WATCHED"}
                 </WatchLaterButton>
               </ButtonsContainer>
             </Texts>
