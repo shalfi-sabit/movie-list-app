@@ -7,6 +7,7 @@ import { ListWrapper } from "../MovieList/styles/movieList";
 import DataStorageContext from "../../contexts/DataStorageContext";
 import { useNavigate } from "react-router-dom";
 import movieList from "../../data/movies.json";
+import EmptyList from "../UI/EmptyList";
 
 const AlreadyWatched = () => {
   const navigate = useNavigate();
@@ -21,28 +22,31 @@ const AlreadyWatched = () => {
       <Navbar />
       <Wrapper>
         <SectionHeading title="ALREADY WATCHED" />
-        <ListWrapper>
-          {alreadyWatchedList.map((movie, idx) => {
-            return (
-              <MovieCard
-                key={movie._id}
-                id={movie._id}
-                backdrop={movie.backdrop_path}
-                genres={movie.genres}
-                overview={movie.overview}
-                poster={movie.poster_path}
-                releaseDate={movie.release_date}
-                title={movie.title}
-                duration={movie.duration}
-                idx={movieList.movies.findIndex(
-                  (newMovie) => newMovie._id === movie._id
-                )}
-                seeDetailsHandler={seeDetailsHandler}
-              />
-            );
-          })}
-        </ListWrapper>
-        )
+        {alreadyWatchedList.length ? (
+          <ListWrapper>
+            {alreadyWatchedList.map((movie, idx) => {
+              return (
+                <MovieCard
+                  key={movie._id}
+                  id={movie._id}
+                  backdrop={movie.backdrop_path}
+                  genres={movie.genres}
+                  overview={movie.overview}
+                  poster={movie.poster_path}
+                  releaseDate={movie.release_date}
+                  title={movie.title}
+                  duration={movie.duration}
+                  idx={movieList.movies.findIndex(
+                    (newMovie) => newMovie._id === movie._id
+                  )}
+                  seeDetailsHandler={seeDetailsHandler}
+                />
+              );
+            })}
+          </ListWrapper>
+        ) : (
+          <EmptyList />
+        )}
       </Wrapper>
     </div>
   );

@@ -41,6 +41,8 @@ const MovieDetails = () => {
     setAlreadyWatchedState,
     watchLaterState,
     setWatchLaterState,
+    setIsSnackbarOpen,
+    setSnackbarMessage,
   } = useContext(DataStorageContext);
 
   const seeDetailsHandler = (idx) => {
@@ -106,6 +108,10 @@ const MovieDetails = () => {
                   }}
                   onClick={() => {
                     if (watchLaterState[params.id]) {
+                      setIsSnackbarOpen(true);
+                      setSnackbarMessage(
+                        "Movie removed from Watch Later successfully."
+                      );
                       setWatchLaterList((prevState) => {
                         let updatedState = prevState.filter(
                           (movie) =>
@@ -114,6 +120,10 @@ const MovieDetails = () => {
                         return updatedState;
                       });
                     } else {
+                      setIsSnackbarOpen(true);
+                      setSnackbarMessage(
+                        "Movie added to Watch Later successfully."
+                      );
                       watchLaterListHandler(params.id);
                     }
                     setWatchLaterState((prevState) => {
@@ -144,6 +154,10 @@ const MovieDetails = () => {
                 <WatchLaterButton
                   onClick={() => {
                     if (alreadyWatchedState[params.id]) {
+                      setIsSnackbarOpen(true);
+                      setSnackbarMessage(
+                        "Movie removed from Already Watched list successfully."
+                      );
                       setAlreadyWatchedList((prevState) => {
                         let updatedState = prevState.filter(
                           (movie) =>
@@ -152,6 +166,10 @@ const MovieDetails = () => {
                         return updatedState;
                       });
                     } else {
+                      setIsSnackbarOpen(true);
+                      setSnackbarMessage(
+                        "Movie added to Already Watched list successfully."
+                      );
                       alreadyWatchedListHandler(params.id);
                     }
                     setAlreadyWatchedState((prevState) => {

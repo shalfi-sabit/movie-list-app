@@ -12,6 +12,8 @@ import {
 } from "./data/defaultStateObjects.js";
 
 function App() {
+  const [snackbarMessage, setSnackbarMessage] = useState("");
+  const [isSnackbarOpen, setIsSnackbarOpen] = useState(false);
   const [watchLaterList, setWatchLaterList] = useState([]);
   const [alreadyWatchedList, setAlreadyWatchedList] = useState([]);
   const [watchLaterState, setWatchLaterState] = useState(watchLaterStateObject);
@@ -42,6 +44,8 @@ function App() {
     }
   };
 
+  const snackbarHandler = () => {};
+
   return (
     <div className="App">
       <DataStorageContext.Provider
@@ -56,6 +60,10 @@ function App() {
           setAlreadyWatchedState,
           watchLaterState,
           setWatchLaterState,
+          isSnackbarOpen,
+          setIsSnackbarOpen,
+          snackbarMessage,
+          setSnackbarMessage,
         }}
       >
         <BrowserRouter>
